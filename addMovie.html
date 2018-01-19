@@ -3,17 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Add Movie</title>
-    <meta name="description" content="Add Movie Details">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/movie.css" />
 </head>
-<body>
-  <header>
-    <img src="images/projector-logo.png" alt="logo" />
-    <ul>
-      <li><a href="/">HOME</a></li>
+<body class="container">
+  <header class="">
+    <img class="fleft logo" src="images/projector-logo.png" alt="logo" />
+    <ul class="fright">
+      <li><a href="./index.html">HOME</a></li>
       <li><a href="#">ADD MOVIE</a></li>
     </ul>
   </header>
-  <form>
+  <div class="clearfix"></div>
+  <form class="add_movie_form" id="add_movie_form">
     <h2>Add a New Movie</h2>
     <ul>
       <li>
@@ -25,7 +28,7 @@
           <input type="text" name="releaseYear" required />
       </li>
       <li>
-        <div>
+        <div class="divide">
           <label for="language">Language</label>
           <select name="language">
            <option value="english">English</option>
@@ -33,8 +36,7 @@
            <option value="hindi">Hindi</option>
            <option value="malayalam">Malayalam</option>
          </select>
-       </div>
-       <div>
+       </div><div class="divide">
           <label for="rating">Rating</label>
           <select name="rating">
            <option value="5">5</option>
@@ -64,12 +66,13 @@
     </ul>
     <button id="submit">SAVE</button>
   </form>
-  <footer>
-    <img src="images/projector-logo.png" alt="logo" />
-    <div >
-      <a href="#" ></a>
-      <a href="#" ></a>
-      <a href="#" ></a>
+  <div class="clearfix"></div>
+  <footer class="">
+    <img class="fright logo" width="200" src="images/projector-logo.png" alt="logo" />
+    <div class="btn-grp fleft ">
+      <button class="btn facebook"></button>
+      <button class="btn twitter"></button>
+      <button class="btn insta"></button>
     </div>
   </footer>
 </body>
